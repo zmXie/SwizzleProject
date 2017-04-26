@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UIViewController+Swizzle.h
 //  SwizzleProject
 //
 //  Created by CHT-Technology on 2017/4/25.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@interface ViewController : UIViewController
 
+@interface UIViewController (Swizzle)
 
 @end
-

@@ -15,6 +15,15 @@
 		AE695C481EAEDB43000E0F61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE695C461EAEDB43000E0F61 /* LaunchScreen.storyboard */; };
 		AE695C531EAEDB43000E0F61 /* SwizzleProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE695C521EAEDB43000E0F61 /* SwizzleProjectTests.m */; };
 		AE695C5E1EAEDB43000E0F61 /* SwizzleProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE695C5D1EAEDB43000E0F61 /* SwizzleProjectUITests.m */; };
+		AE695C701EAEDBFF000E0F61 /* UIViewController+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = AE695C6F1EAEDBFF000E0F61 /* UIViewController+Swizzle.m */; };
+		AE695C761EAEFAE8000E0F61 /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = AE695C751EAEFAE8000E0F61 /* NSObject+Swizzle.m */; };
+		AE695C7D1EAF29F3000E0F61 /* NSArray+ZMSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = AE695C7C1EAF29F3000E0F61 /* NSArray+ZMSafe.m */; };
+		AE695C7F1EAF2E0B000E0F61 /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE695C7E1EAF2E0B000E0F61 /* NSArrayTests.m */; };
+		AE695C821EAF35BF000E0F61 /* NSMutableArray+ZMSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = AE695C811EAF35BF000E0F61 /* NSMutableArray+ZMSafe.m */; };
+		AE695C851EAF3F6D000E0F61 /* NSDictionary+ZMSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = AE695C841EAF3F6D000E0F61 /* NSDictionary+ZMSafe.m */; };
+		AEED62471EB031A900EF7BC2 /* NSMutableDictionary+ZMSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED62461EB031A900EF7BC2 /* NSMutableDictionary+ZMSafe.m */; };
+		AEED624A1EB03E7700EF7BC2 /* NSString+ZMSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED62491EB03E7700EF7BC2 /* NSString+ZMSafe.m */; };
+		AEED624D1EB04AF100EF7BC2 /* NSMutableString+ZMSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED624C1EB04AF100EF7BC2 /* NSMutableString+ZMSafe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +60,23 @@
 		AE695C591EAEDB43000E0F61 /* SwizzleProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwizzleProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE695C5D1EAEDB43000E0F61 /* SwizzleProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwizzleProjectUITests.m; sourceTree = "<group>"; };
 		AE695C5F1EAEDB43000E0F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE695C6E1EAEDBFF000E0F61 /* UIViewController+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzle.h"; sourceTree = "<group>"; };
+		AE695C6F1EAEDBFF000E0F61 /* UIViewController+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzle.m"; sourceTree = "<group>"; };
+		AE695C741EAEFAE8000E0F61 /* NSObject+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzle.h"; sourceTree = "<group>"; };
+		AE695C751EAEFAE8000E0F61 /* NSObject+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzle.m"; sourceTree = "<group>"; };
+		AE695C7B1EAF29F3000E0F61 /* NSArray+ZMSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ZMSafe.h"; sourceTree = "<group>"; };
+		AE695C7C1EAF29F3000E0F61 /* NSArray+ZMSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ZMSafe.m"; sourceTree = "<group>"; };
+		AE695C7E1EAF2E0B000E0F61 /* NSArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayTests.m; sourceTree = "<group>"; };
+		AE695C801EAF35BF000E0F61 /* NSMutableArray+ZMSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+ZMSafe.h"; sourceTree = "<group>"; };
+		AE695C811EAF35BF000E0F61 /* NSMutableArray+ZMSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+ZMSafe.m"; sourceTree = "<group>"; };
+		AE695C831EAF3F6D000E0F61 /* NSDictionary+ZMSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ZMSafe.h"; sourceTree = "<group>"; };
+		AE695C841EAF3F6D000E0F61 /* NSDictionary+ZMSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ZMSafe.m"; sourceTree = "<group>"; };
+		AEED62451EB031A900EF7BC2 /* NSMutableDictionary+ZMSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+ZMSafe.h"; sourceTree = "<group>"; };
+		AEED62461EB031A900EF7BC2 /* NSMutableDictionary+ZMSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+ZMSafe.m"; sourceTree = "<group>"; };
+		AEED62481EB03E7700EF7BC2 /* NSString+ZMSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZMSafe.h"; sourceTree = "<group>"; };
+		AEED62491EB03E7700EF7BC2 /* NSString+ZMSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZMSafe.m"; sourceTree = "<group>"; };
+		AEED624B1EB04AF100EF7BC2 /* NSMutableString+ZMSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+ZMSafe.h"; sourceTree = "<group>"; };
+		AEED624C1EB04AF100EF7BC2 /* NSMutableString+ZMSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+ZMSafe.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +129,13 @@
 			children = (
 				AE695C3B1EAEDB43000E0F61 /* AppDelegate.h */,
 				AE695C3C1EAEDB43000E0F61 /* AppDelegate.m */,
+				AE695C741EAEFAE8000E0F61 /* NSObject+Swizzle.h */,
+				AE695C751EAEFAE8000E0F61 /* NSObject+Swizzle.m */,
 				AE695C3E1EAEDB43000E0F61 /* ViewController.h */,
 				AE695C3F1EAEDB43000E0F61 /* ViewController.m */,
+				AE695C6E1EAEDBFF000E0F61 /* UIViewController+Swizzle.h */,
+				AE695C6F1EAEDBFF000E0F61 /* UIViewController+Swizzle.m */,
+				AE695C771EAF2960000E0F61 /* Foundation */,
 				AE695C411EAEDB43000E0F61 /* Main.storyboard */,
 				AE695C441EAEDB43000E0F61 /* Assets.xcassets */,
 				AE695C461EAEDB43000E0F61 /* LaunchScreen.storyboard */,
@@ -126,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				AE695C521EAEDB43000E0F61 /* SwizzleProjectTests.m */,
+				AE695C7E1EAF2E0B000E0F61 /* NSArrayTests.m */,
 				AE695C541EAEDB43000E0F61 /* Info.plist */,
 			);
 			path = SwizzleProjectTests;
@@ -138,6 +170,25 @@
 				AE695C5F1EAEDB43000E0F61 /* Info.plist */,
 			);
 			path = SwizzleProjectUITests;
+			sourceTree = "<group>";
+		};
+		AE695C771EAF2960000E0F61 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				AE695C7B1EAF29F3000E0F61 /* NSArray+ZMSafe.h */,
+				AE695C7C1EAF29F3000E0F61 /* NSArray+ZMSafe.m */,
+				AE695C801EAF35BF000E0F61 /* NSMutableArray+ZMSafe.h */,
+				AE695C811EAF35BF000E0F61 /* NSMutableArray+ZMSafe.m */,
+				AE695C831EAF3F6D000E0F61 /* NSDictionary+ZMSafe.h */,
+				AE695C841EAF3F6D000E0F61 /* NSDictionary+ZMSafe.m */,
+				AEED62451EB031A900EF7BC2 /* NSMutableDictionary+ZMSafe.h */,
+				AEED62461EB031A900EF7BC2 /* NSMutableDictionary+ZMSafe.m */,
+				AEED62481EB03E7700EF7BC2 /* NSString+ZMSafe.h */,
+				AEED62491EB03E7700EF7BC2 /* NSString+ZMSafe.m */,
+				AEED624B1EB04AF100EF7BC2 /* NSMutableString+ZMSafe.h */,
+				AEED624C1EB04AF100EF7BC2 /* NSMutableString+ZMSafe.m */,
+			);
+			name = Foundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +327,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE695C851EAF3F6D000E0F61 /* NSDictionary+ZMSafe.m in Sources */,
+				AEED62471EB031A900EF7BC2 /* NSMutableDictionary+ZMSafe.m in Sources */,
+				AE695C7D1EAF29F3000E0F61 /* NSArray+ZMSafe.m in Sources */,
+				AE695C761EAEFAE8000E0F61 /* NSObject+Swizzle.m in Sources */,
+				AEED624D1EB04AF100EF7BC2 /* NSMutableString+ZMSafe.m in Sources */,
+				AE695C701EAEDBFF000E0F61 /* UIViewController+Swizzle.m in Sources */,
 				AE695C401EAEDB43000E0F61 /* ViewController.m in Sources */,
+				AE695C821EAF35BF000E0F61 /* NSMutableArray+ZMSafe.m in Sources */,
+				AEED624A1EB03E7700EF7BC2 /* NSString+ZMSafe.m in Sources */,
 				AE695C3D1EAEDB43000E0F61 /* AppDelegate.m in Sources */,
 				AE695C3A1EAEDB43000E0F61 /* main.m in Sources */,
 			);
@@ -286,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE695C7F1EAF2E0B000E0F61 /* NSArrayTests.m in Sources */,
 				AE695C531EAEDB43000E0F61 /* SwizzleProjectTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,6 +578,7 @@
 				AE695C641EAEDB43000E0F61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE695C651EAEDB43000E0F61 /* Build configuration list for PBXNativeTarget "SwizzleProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +587,7 @@
 				AE695C671EAEDB43000E0F61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE695C681EAEDB43000E0F61 /* Build configuration list for PBXNativeTarget "SwizzleProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +596,7 @@
 				AE695C6A1EAEDB43000E0F61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
