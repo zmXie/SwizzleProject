@@ -64,6 +64,11 @@
     [mStr setString:nil];
     NSLog(@"mStr===%@",mStr);
     
+    UITextView *tx = [UITextView new];
+    [self.view addSubview:tx];
+    
+    [tx becomeFirstResponder];
+    
 //    NSAttributedString
 }
 

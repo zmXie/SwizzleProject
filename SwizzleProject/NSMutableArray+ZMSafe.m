@@ -15,25 +15,29 @@ static NSString *KMArrayClass = @"__NSArrayM";
 +(void)load{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [self zm_swizzleInstanceMethodWithSrcClass:NSClassFromString(KMArrayClass)
-                                            srcSel:@selector(addObject:)
-                                       swizzledSel:@selector(zm_safeAddObject:)];
+        @autoreleasepool {
+            
+            [self zm_swizzleInstanceMethodWithSrcClass:NSClassFromString(KMArrayClass)
+                                                srcSel:@selector(addObject:)
+                                           swizzledSel:@selector(zm_safeAddObject:)];
+            
+            [self zm_swizzleInstanceMethodWithSrcClass:NSClassFromString(KMArrayClass)
+                                                srcSel:@selector(insertObject:atIndex:)
+                                           swizzledSel:@selector(zm_safeInsertObject:atIndex:)];
+            
+            [self zm_swizzleInstanceMethodWithSrcClass:NSClassFromString(KMArrayClass)
+                                                srcSel:@selector(removeObjectAtIndex:)
+                                           swizzledSel:@selector(zm_safeRemoveObjectAtIndex:)];
+            
+            [self zm_swizzleInstanceMethodWithSrcClass:NSClassFromString(KMArrayClass)
+                                                srcSel:@selector(replaceObjectAtIndex:withObject:)
+                                           swizzledSel:@selector(zm_safeReplaceObjectAtIndex:withObject:)];
+            
+            [self zm_swizzleInstanceMethodWithSrcClass:NSClassFromString(KMArrayClass)
+                                                srcSel:@selector(objectAtIndex:)
+                                           swizzledSel:@selector(zm_safeObjectAtIndex:)];
+        }
         
-        [self zm_swizzleInstanceMethodWithSrcClass:NSClassFromString(KMArrayClass)
-                                            srcSel:@selector(insertObject:atIndex:)
-                                       swizzledSel:@selector(zm_safeInsertObject:atIndex:)];
-        
-        [self zm_swizzleInstanceMethodWithSrcClass:NSClassFromString(KMArrayClass)
-                                            srcSel:@selector(removeObjectAtIndex:)
-                                       swizzledSel:@selector(zm_safeRemoveObjectAtIndex:)];
-        
-        [self zm_swizzleInstanceMethodWithSrcClass:NSClassFromString(KMArrayClass)
-                                            srcSel:@selector(replaceObjectAtIndex:withObject:)
-                                       swizzledSel:@selector(zm_safeReplaceObjectAtIndex:withObject:)];
-        
-        [self zm_swizzleInstanceMethodWithSrcClass:NSClassFromString(KMArrayClass)
-                                            srcSel:@selector(objectAtIndex:)
-                                       swizzledSel:@selector(zm_safeObjectAtIndex:)];
     });
 }
 
