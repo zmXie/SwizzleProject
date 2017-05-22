@@ -19,7 +19,7 @@
 		AE695C761EAEFAE8000E0F61 /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = AE695C751EAEFAE8000E0F61 /* NSObject+Swizzle.m */; };
 		AE695C7D1EAF29F3000E0F61 /* NSArray+ZMSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = AE695C7C1EAF29F3000E0F61 /* NSArray+ZMSafe.m */; };
 		AE695C7F1EAF2E0B000E0F61 /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE695C7E1EAF2E0B000E0F61 /* NSArrayTests.m */; };
-		AE695C821EAF35BF000E0F61 /* NSMutableArray+ZMSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = AE695C811EAF35BF000E0F61 /* NSMutableArray+ZMSafe.m */; };
+		AE695C821EAF35BF000E0F61 /* NSMutableArray+ZMSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = AE695C811EAF35BF000E0F61 /* NSMutableArray+ZMSafe.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AE695C851EAF3F6D000E0F61 /* NSDictionary+ZMSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = AE695C841EAF3F6D000E0F61 /* NSDictionary+ZMSafe.m */; };
 		AEED62471EB031A900EF7BC2 /* NSMutableDictionary+ZMSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED62461EB031A900EF7BC2 /* NSMutableDictionary+ZMSafe.m */; };
 		AEED624A1EB03E7700EF7BC2 /* NSString+ZMSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED62491EB03E7700EF7BC2 /* NSString+ZMSafe.m */; };
