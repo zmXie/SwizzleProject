@@ -38,33 +38,49 @@ static NSString *KMArrayClass = @"__NSArrayM";
 }
 
 - (void)zm_safeAddObject:(id)anObject{
-    if(!anObject)return;
     
-    [self zm_safeAddObject:anObject];
+    @autoreleasepool {
+        if(!anObject)return;
+        
+        [self zm_safeAddObject:anObject];
+    }
+    
 }
 
 - (void)zm_safeInsertObject:(id)anObject atIndex:(NSUInteger)index{
-    if(!anObject || index > self.count)return;
+    @autoreleasepool {
+        if(!anObject || index > self.count)return;
+        
+        [self zm_safeInsertObject:anObject atIndex:index];
+    }
     
-    [self zm_safeInsertObject:anObject atIndex:index];
 }
 
 - (void)zm_safeRemoveObjectAtIndex:(NSUInteger)index{
-    if(index >= self.count) return;
+    @autoreleasepool {
+        if(index >= self.count) return;
+        
+        [self zm_safeRemoveObjectAtIndex:index];
+    }
     
-    [self zm_safeRemoveObjectAtIndex:index];
 }
 
 - (void)zm_safeReplaceObjectAtIndex:(NSUInteger)index withObject:(id)anObject{
-    if(index >= self.count || !anObject) return;
+    @autoreleasepool {
+        if(index >= self.count || !anObject) return;
+        
+        [self zm_safeReplaceObjectAtIndex:index withObject:anObject];
+    }
     
-    [self zm_safeReplaceObjectAtIndex:index withObject:anObject];
 }
 
 - (id)zm_safeObjectAtIndex:(NSUInteger)index{
-    if (index >= self.count) return nil;
+    @autoreleasepool {
+        if (index >= self.count) return nil;
+        
+        return [self zm_safeObjectAtIndex:index];
+    }
     
-    return [self zm_safeObjectAtIndex:index];
 }
 
 
